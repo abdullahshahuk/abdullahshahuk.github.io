@@ -1,305 +1,206 @@
 <!DOCTYPE html>
-
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<link rel="apple-touch-icon" sizes="57x57" href="./img/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="./img/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="./img/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="./img/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="./img/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="./img/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="./img/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="./img/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="./img/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="./img/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="./img/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
-	<link rel="manifest" href="/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
-	<meta name="title" content="Abdullah Shah's Portfolio">
-	<meta name="description" content="Hi! I'm Abdullah Shah. I am a 16-year-old full-stack web developer, tech enthusiast, digital artist and an aspiring game developer.">
-	<meta name="keywords" content="Abdullah Shah, software, development, 0117S06N, web developer, full-stack, game developer, HTML, CSS, JavaScript, Python, Django, C#, PHP, SQL, website, graphics, career, portfolio, job, games">
-	<meta name="robots" content="index, follow">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="language" content="English">
-	<meta name="author" content="Abdullah Shah">
-
-	<style>
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.example::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.example {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
-	body, html {
-	 height: 100%;
-	 
-	 scroll-behavior: smooth;
-	}
-
-	.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5{
-	 position: relative;
-	 opacity: 0.80;
-	 background-attachment: fixed;
-	 background-position: center;
-	 background-repeat: no-repeat;
-	 background-size: cover;
-
-	}
-	.bgimg-1 {
-	 background-image: url("./img/img-parallax-endeavour.png");
-	 min-height: 80%;
-	}
-
-	.bgimg-2 {
-	 background-image: url("./img/img-parallax-blur.jpg");
-	 min-height: 50%;
-	}
-
-	.bgimg-3 {
-	 background-image: url("./img/img-parallax-code.jpg");
-	 min-height: 50%;
-	}
-
-	.bgimg-4 {
-	 background-image: url("./img/img-parallax-designprocess.png");
-	 min-height: 50%;
-	}
-
-	.bgimg-5 {
-	 background-image: url("./img/img-parallax-experience.jpg");
-	 min-height: 50%;
-	}
-
-	.caption {
-	 position: absolute;
-	 left: 0;
-	 top: 50%;
-	 width: 100%;
-	 text-align: center;
-	 color: #000;
-	}
-
-	.caption span.border {
-	 background-color: #111;
-	 color: #fff;
-	 padding: 18px;
-	 font-size: 25px;
-	 letter-spacing: 2.5px;
-	}
-
-	h3 {
-	 /*letter-spacing: 5px;*/
-	 text-transform: uppercase;
-	 font: 20px "Lato", sans-serif;
-	 color: #111;
-	}
-
-	p{
-		font-family: 'ArialNova', sans-serif;
-    	font-size: 18.00px;
-    	font-weight: 400;
-    	font-style: normal;
-    	text-align: left;
-    	letter-spacing: 0.00px;
-		padding-left: 20%;
-		padding-right: 20%;
-	}
-
-	.specialTextSubheading  {
-		font-family: 'ArialNova-Italic', sans-serif;
-    	font-size: 18.00px;
-    	font-weight: 400;
-    	font-style: italic;
-		text-align: left;
-    	letter-spacing: 0.00px;
-		padding-left: 0%;
-		padding-right: 20%;
-	}
-
-	.specialSubheading {
-		font-family: 'ArialNova-BoldItalic', sans-serif;
-    	font-size: 18.00px;
-    	font-weight: 700;
-    	font-style: italic;
-    	text-align: left;
-    	letter-spacing: 0.00px;
-		color: rgba(255,93,93,1);
-		padding-left: 20%;
-		padding-right: 0%;
-	}
-
-	.specialText  {
-		font-family: 'ArialNova-Italic', sans-serif;
-    	font-size: 18.00px;
-    	font-weight: 400;
-    	font-style: italic;
-		text-align: left;
-    	letter-spacing: 0.00px;
-		padding-left: 20%;
-		padding-right: 20%;
-	}
-
-	/*Turn off parallax scrolling for tablets and phones*/
-	@media only screen and (max-device-width: 1024px) {
-	 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4,.bgimg-5 {
-		background-attachment: initial !important;
-		background-position: 50% !important;
-		background-size: cover !important;
-	 }
-	}
-	</style>
-	<title>Abdullah Shah's Portfolio</title>
-</head>
-
-<body class="example">
-	<div class="bgimg-1" id="section1">
-		
-		<div class="caption">
-			<span class="border">HI, I'M ABDULLAH SHAH</span>
+<html>	
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width, initial-scale=1" name="viewport">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<link rel="apple-touch-icon" sizes="57x57" href="./img/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="./img/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="./img/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="./img/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="./img/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="./img/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="./img/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="./img/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="./img/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="./img/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<meta name="title" content="Abdullah Shah's Portfolio">
+		<meta name="description"
+	content="Hi! I'm Abdullah Shah. I am a 17-year-old full-stack web developer, tech enthusiast, digital artist and an aspiring game developer.">
+		<meta name="keywords"
+			content="Abdullah Shah, software, development, 0117S06N, web developer, full-stack, game developer, HTML, CSS, JavaScript, Python, Django, C#, PHP, SQL, website, graphics, career, portfolio, job, games">
+		<meta name="robots" content="index, follow">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="language" content="English">
+		<meta name="author" content="Abdullah Shah">
+		<title>Abdullah Shah's Portfolio</title>
+	</head>
+	<body class="example">
+		<div class="bgimg-1" id="section1">
+			<div class="caption">
+				<span class="border">HI, I'M ABDULLAH SHAH</span>
+			</div>
 		</div>
-	</div>
 
 
-	<div id="section2" style="color: #777;background-color:white;text-align:center;padding:20px 50px 80px 80px;text-align: justify;">
-		<h3 style="text-align:center;">About</h3><br>
-
-		<p>Hi! I'm Abdullah Shah. I am a 17 year old full stack web developer, tech and crypto enthusiast, digital
-			artist and an aspiring game developer. I am fluent in HTML, CSS, JavaScript, Python
-			(Django), C#, PHP, SQL and more.</p>
-	</div>
-
-
-	<div class="bgimg-5">
-		<div class="caption">
-			<span class="border" style=" /* background-color:transparent; */ font-size:25px;color: #f7f7f7;">EXPERIENCE</span>
+		<div id="section2"
+			style="color: #777;background-color:white;text-align:center;padding:20px 50px 80px 80px;text-align: justify;">
+			<h3 style="text-align:center;">About</h3><br>
+			<p>Hi! I'm Abdullah Shah. I am a 17 year old full stack web developer, tech and crypto enthusiast, digital
+				artist and an aspiring game developer. I am fluent in HTML, CSS, JavaScript, Python
+				(Django), C#, PHP, SQL and more.</p>
 		</div>
-	</div>
 
-	<div style="position:relative;">
-		<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-			<span class="specialSubheading">Ridgepoint Games</span><span class="specialTextSubheading"> (July 2019 - Present)</span>
+
+		<div class="bgimg-5">
+			<div class="caption">
+				<span class="border"
+					style=" /* background-color:transparent; */ font-size:25px;color: #f7f7f7;">EXPERIENCE</span>
+			</div>
+		</div>
+
+		<div style="position:relative;">
+			<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+				<span class="specialSubheading">Ridgepoint Games</span><span class="specialTextSubheading"> (July 2019 -
+					Present)</span>
 				<p></p>
 				<span class="specialText">Indie Game Developer</span>
 				<p></p>
 				<p>
-				I am currently working on producing a game called Endeavour in my free time that I intend
-				to ship on Steam to help fine tune my skills and kick start my professional career.
+					I am currently working on producing a game called Endeavour in my free time that I intend
+					to ship on Steam to help fine tune my skills and kick start my professional career.
 				</p>
 				<br>
 
-			<span class="specialSubheading">Sage Work Experience</span><span class="specialTextSubheading"> (2 Weeks, July 2019)</span>
+				<span class="specialSubheading">Sage Work Experience</span><span class="specialTextSubheading"> (2 Weeks,
+					July 2019)</span>
 				<p></p>
 				<span class="specialText">Software Developer</span>
 				<p></p>
 				<p>
-				During my work placement at Sage my team was tasked with designing and creating a
-				scrum team management web application.
-				<br><br>
-				In this time I worked to ensure my team members were all assigned to roles that played to
-				their strengths to enable us to work as efficiently as possible. We also made use of daily
-				reviews and meetings to ensure that we made steady progress.
-				<br><br>
-				I also produced a total of 44,473 lines of code towards the project, which accounts
-				for 92% of all code written for the project.
-				<br><br>
-				Github: <a href="https://github.com/jasonmccormack/UTC-STUDENT-PROJECT">https://github.com/jasonmccormack/UTC-STUDENT-PROJECT</a>
+					During my work placement at Sage my team was tasked with designing and creating a
+					scrum team management web application.
+					<br><br>
+					In this time I worked to ensure my team members were all assigned to roles that played to
+					their strengths to enable us to work as efficiently as possible. We also made use of daily
+					reviews and meetings to ensure that we made steady progress.
+					<br><br>
+					I also produced a total of 44,473 lines of code towards the project, which accounts
+					for 92% of all code written for the project.
+					<br><br>
+					Github: <a
+						href="https://github.com/jasonmccormack/UTC-STUDENT-PROJECT">https://github.com/jasonmccormack/UTC-STUDENT-PROJECT</a>
 				</p>
+			</div>
 		</div>
-	</div>
 
-	<div class="bgimg-2">
-		<div class="caption">
-			<span class="border" style=" /* background-color:transparent; */ font-size:25px;color: #f7f7f7;">QUALIFICATIONS</span>
+		<div class="bgimg-2">
+			<div class="caption">
+				<span class="border"
+					style=" /* background-color:transparent; */ font-size:25px;color: #f7f7f7;">QUALIFICATIONS</span>
+			</div>
 		</div>
-	</div>
 
 
-	<div style="position:relative;"> 
-		<div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-			<div class="container">
-				<div id="myCarousel" class="carousel slide" data-ride="carousel">
-				  <!-- Indicators -->
-				  <ol class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="3"></li>
-					<li data-target="#myCarousel" data-slide-to="4"></li>
-				  </ol>
-			  
-				  <!-- Wrapper for slides -->
-				  <div class="carousel-inner">
-					<div class="item active"><center>
-						<center><p>On December 8th 2020 I achieved a Microsoft Technology Associate in Python Programming.<br>
-						The authenticity of this certificate can be verified at <a href="https://verify.certiport.com">https://verify.certiport.com</a> using the code printed on the certificate.</p></center>
-						<img width="75%" height="20%" src="./img/PythonCert.png">
-					</center></div>
-			  
-					<div class="item"><center>
-						<center><p>On December 15th 2020 I achieved a Microsoft Technology Associate in JavaScript Programming.<br>
-						The authenticity of this certificate can be verified at <a href="https://verify.certiport.com">https://verify.certiport.com</a> using the code printed on the certificate.</p></center>
-						<img width="75%" height="20%" src="./img/JavaScriptCert.png">
-					</center></div>
-					
-					<div class="item"><center>
-						<center><p>On September 29th 2020 I achieved a Microsoft Office Specialist certificate in Word 2016.<br>
-						The authenticity of this certificate can be verified at <a href="https://verify.certiport.com">https://verify.certiport.com</a> using the code printed on the certificate.</p></center>
-						<img width="75%" height="20%" src="./img/Word2016Cert.png">
-					</center></div>
+		<div style="position:relative;">
+			<div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+				<div class="container">
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="3"></li>
+							<li data-target="#myCarousel" data-slide-to="4"></li>
+						</ol>
 
-					<div class="item"><center>
-						<center><p>On December 15th 2020 I achieved a Microsoft Office Specialist certificate in PowerPoint 2016.<br>
-						The authenticity of this certificate can be verified at <a href="https://verify.certiport.com">https://verify.certiport.com</a> using the code printed on the certificate.</p></center>
-						<img width="75%" height="20%" src="./img/PowerPointCert.png">
-					</center></div>
-				  </div>
-				  
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+							<div class="item active">
+								<center>
+									<center>
+										<p>On December 8th 2020 I achieved a Microsoft Technology Associate in Python
+											Programming.<br>
+											The authenticity of this certificate can be verified at <a
+												href="https://verify.certiport.com">https://verify.certiport.com</a> using
+											the code printed on the certificate.</p>
+									</center>
+									<img width="75%" height="20%" src="./img/PythonCert.png">
+								</center>
+							</div>
 
-				  <!-- Left and right controls -->
-				  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left"></span>
-					<span class="sr-only">Previous</span>
-				  </a>
-				  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right"></span>
-					<span class="sr-only">Next</span>
-				  </a>
+							<div class="item">
+								<center>
+									<center>
+										<p>On December 15th 2020 I achieved a Microsoft Technology Associate in JavaScript
+											Programming.<br>
+											The authenticity of this certificate can be verified at <a
+												href="https://verify.certiport.com">https://verify.certiport.com</a> using
+											the code printed on the certificate.</p>
+									</center>
+									<img width="75%" height="20%" src="./img/JavaScriptCert.png">
+								</center>
+							</div>
+
+							<div class="item">
+								<center>
+									<center>
+										<p>On September 29th 2020 I achieved a Microsoft Office Specialist certificate in
+											Word 2016.<br>
+											The authenticity of this certificate can be verified at <a
+												href="https://verify.certiport.com">https://verify.certiport.com</a> using
+											the code printed on the certificate.</p>
+									</center>
+									<img width="75%" height="20%" src="./img/Word2016Cert.png">
+								</center>
+							</div>
+
+							<div class="item">
+								<center>
+									<center>
+										<p>On December 15th 2020 I achieved a Microsoft Office Specialist certificate in
+											PowerPoint 2016.<br>
+											The authenticity of this certificate can be verified at <a
+												href="https://verify.certiport.com">https://verify.certiport.com</a> using
+											the code printed on the certificate.</p>
+									</center>
+									<img width="75%" height="20%" src="./img/PowerPointCert.png">
+								</center>
+							</div>
+						</div>
+
+
+						<!-- Left and right controls -->
+						<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#myCarousel" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
 				</div>
-			  </div>
-			  <br>
-			<p></p>
+				<br>
+				<p></p>
+			</div>
 		</div>
-	</div>
 
-	<div class="bgimg-3">
-		<div class="caption">
-			<span class="border" style=" /* background-color:transparent; */ font-size:25px;color: #f7f7f7;">SKILLS AND ABILITIES</span>
+		<div class="bgimg-3">
+			<div class="caption">
+				<span class="border" style=" /* background-color:transparent; */ font-size:25px;color: #f7f7f7;">SKILLS AND
+					ABILITIES</span>
+			</div>
 		</div>
-	</div>
 
-	<div style="position:relative;">
-		<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-			<span class="specialSubheading">Digital Graphic Design</span><span class="specialTextSubheading"></span>
+		<div style="position:relative;">
+			<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+				<span class="specialSubheading">Digital Graphic Design</span><span class="specialTextSubheading"></span>
 				<p></p>
 				<p>
 					I have made many assets for personal projects in Unity and Twitch/YouTube graphics for
@@ -309,7 +210,7 @@
 				</p>
 				<br>
 
-			<span class="specialSubheading">Programming</span><span class="specialTextSubheading"></span>
+				<span class="specialSubheading">Programming</span><span class="specialTextSubheading"></span>
 				<p></p>
 				<p>
 					I have used programming very frequently over the last few years with software development
@@ -318,7 +219,7 @@
 				</p>
 				<br>
 
-			<span class="specialSubheading">Sound Design</span><span class="specialTextSubheading"></span>
+				<span class="specialSubheading">Sound Design</span><span class="specialTextSubheading"></span>
 				<p></p>
 				<p>
 					As part of my game development and YouTube endeavours I have had to teach myself and
@@ -326,7 +227,7 @@
 				</p>
 				<br>
 
-			<span class="specialSubheading">Video Production</span><span class="specialTextSubheading"></span>
+				<span class="specialSubheading">Video Production</span><span class="specialTextSubheading"></span>
 				<p></p>
 				<p>
 					I have spent many hours working on video production and have taught myself to edit and
@@ -335,60 +236,69 @@
 					aspects of animation.
 				</p>
 				<br>
+			</div>
 		</div>
-	</div>
 
-	<div class="bgimg-3">
-		<div class="caption">
-			<span class="border" style=" /* background-color:transparent; */ font-size:25px;color: #f7f7f7;">EDUCATION</span>
+		<div class="bgimg-3">
+			<div class="caption">
+				<span class="border"
+					style=" /* background-color:transparent; */ font-size:25px;color: #f7f7f7;">EDUCATION</span>
+			</div>
 		</div>
-	</div>
 
-	<div style="position:relative;">
-		<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-			<span class="specialSubheading">UTC Reading</span><span class="specialTextSubheading"> (2018 - 2020)</span>
+		<div style="position:relative;">
+			<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+				<span class="specialSubheading">UTC Reading</span><span class="specialTextSubheading"> (2018 - 2020)</span>
 				<p></p>
 				<span class="specialText">GCSE in Computer Science, Grade 9 (A** Equivalent)</span>
 				<p></p>
 				<p>
-					Over the course of the two years I was studying for my GCSE's, I travelled 2 hours each way daily to attend the World Class,
+					Over the course of the two years I was studying for my GCSE's, I travelled 2 hours each way daily to
+					attend the World Class,
 					Microsoft Showcase, Outstanding rated, Adobe sponsored school, UTC Reading. UTC
 					Reading helped me better myself and my abilities by allowing me to focus on my passion
-					(computing) and  by providing me with all necessary facilities and software required for me to
+					(computing) and by providing me with all necessary facilities and software required for me to
 					learn most optimally.
 				</p>
 				<br>
 
-			<span class="specialSubheading">UTC Reading</span><span class="specialTextSubheading"> (2020 - Present)</span>
+				<span class="specialSubheading">UTC Reading</span><span class="specialTextSubheading"> (2020 -
+					Present)</span>
 				<p></p>
 				<span class="specialText">BETC Level 3 Diploma in Computing, Currently predicted a triple Distinction</span>
 				<p></p>
 				<p>
-					My successful completion of my GCSE's at UTC Reading inspired me to continue on with them for my post 16 education. 
-					The Extended BTEC Level 3 Diploma in Computing that I am currently taking has been very promising so far. In this curriculum, 
-					I cover social media marketing, software development, web development and digital graphics and animation.  All of these topics 
-					are covered and assessed in business applications with assignments in which we are expected to produce work to a standard expected 
+					My successful completion of my GCSE's at UTC Reading inspired me to continue on with them for my post 16
+					education.
+					The Extended BTEC Level 3 Diploma in Computing that I am currently taking has been very promising so
+					far. In this curriculum,
+					I cover social media marketing, software development, web development and digital graphics and
+					animation. All of these topics
+					are covered and assessed in business applications with assignments in which we are expected to produce
+					work to a standard expected
 					in the workplace to make them marketable skills as opposed to theoretical knowledge.
 				</p>
 				<br>
+			</div>
 		</div>
-	</div>
 
-	<div class="bgimg-4">
-		<div class="caption">
-			<span class="border" style=" /* background-color:transparent; */ font-size:25px;color: #f7f7f7;">MY PROJECTS</span>
+		<div class="bgimg-4">
+			<div class="caption">
+				<span class="border" style=" /* background-color:transparent; */ font-size:25px;color: #f7f7f7;">MY
+					PROJECTS</span>
+			</div>
 		</div>
-	</div>
 
-	<div style="position:relative;">
-		<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-			<span class="specialSubheading">Introduction:</span><span class="specialTextSubheading"></span>
+		<div style="position:relative;">
+			<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+				<span class="specialSubheading">Introduction:</span><span class="specialTextSubheading"></span>
 				<p></p>
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quis officiis veniam ea, rerum blanditiis odit impedit voluptatum, sequi non modi fugit, mollitia nostrum! Quibusdam delectus qui aut iste unde?
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quis officiis veniam ea, rerum blanditiis
+					odit impedit voluptatum, sequi non modi fugit, mollitia nostrum! Quibusdam delectus qui aut iste unde?
 				</p>
 				<br>
+			</div>
 		</div>
-	</div>
-</body>
+	</body>
 </html>
