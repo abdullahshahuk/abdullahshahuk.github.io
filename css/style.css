@@ -25,27 +25,27 @@ body, html {
 }
 
 .bgimg-1 {
- background-image: url("./img/img-parallax-endeavour.png");
+ background-image: url("../img/img-parallax-endeavour.png");
  min-height: 80%;
 }
 
 .bgimg-2 {
- background-image: url("./img/img-parallax-blur.jpg");
+ background-image: url("../img/img-parallax-blur.jpg;");
  min-height: 50%;
 }
 
 .bgimg-3 {
- background-image: url("./img/img-parallax-code.jpg");
+ background-image: url("../img/img-parallax-code.jpg");
  min-height: 50%;
 }
 
 .bgimg-4 {
- background-image: url("./img/img-parallax-designprocess.png");
+ background-image: url("../img/img-parallax-designprocess.png");
  min-height: 50%;
 }
 
 .bgimg-5 {
- background-image: url("./img/img-parallax-experience.jpg");
+ background-image: url("../img/img-parallax-experience.jpg");
  min-height: 50%;
 }
 
