@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
 html {
   height: 100%;
   background: radial-gradient(ellipse at 50%, #1b2735 0%, #090a0f 100%);
@@ -63,10 +65,9 @@ html {
   right: 0;
   color: #FFF;
   text-align: center;
-  font-family: "lato", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  font-size: 60px;
-  letter-spacing: 10px;
+  font-size: 50px;
   margin-top: -60px;
   padding-left: 10px;
 }
@@ -78,10 +79,9 @@ html {
   right: 0;
   color: #FFF;
   text-align: center;
-  font-family: "lato", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  font-size: 40px;
-  letter-spacing: 10px;
+  font-size: 30px;
   margin-top: -60px;
   padding-left: 10px;
 }
