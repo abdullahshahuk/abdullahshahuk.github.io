@@ -86,11 +86,44 @@ html {
   padding-left: 10px;
 }
 
-/* #title span {
+#title span {
   background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-} */
+}
+
+#subtitle span {
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#navmenu {
+  position: fixed;
+  top: 65%;
+  left: 0;
+  right: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-family: 300;
+  font-size: 25px;
+}
+
+.navitem {
+  border-left: 1px solid #FFF;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #FFF;
+  border-image: linear-gradient(to bottom, white, #38495a);
+  border-image-slice: 1;
+}
+
+#navmenu span {
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 @keyframes animStar {
   from {
