@@ -87,13 +87,13 @@ html {
 }
 
 #title span {
-  background: -webkit-linear-gradient(white, #38495a);
+  background: -webkit-linear-gradient(white, #808b98);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 #subtitle span {
-  background: -webkit-linear-gradient(white, #38495a);
+  background: -webkit-linear-gradient(white, #808b98);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -115,12 +115,12 @@ html {
   padding-left: 10px;
   padding-right: 10px;
   border-right: 1px solid #FFF;
-  border-image: linear-gradient(to bottom, white, #38495a);
+  border-image: linear-gradient(to bottom, white, #808b98);
   border-image-slice: 1;
 }
 
 #navmenu span {
-  background: -webkit-linear-gradient(white, #38495a);
+  background: -webkit-linear-gradient(white, #808b98);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
