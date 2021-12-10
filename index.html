@@ -14,27 +14,68 @@
   <div id='stars'></div>
   <div id='stars2'></div>
   <div id='stars3'></div>
-  <div id='title'>
-    <span>
-      Hello, I'm Abdullah Shah
-    </span>
-  </div>
-  <div id='subtitle'>
-    <br>
-    <span>
-      I'M A
-      <span href="" class="typewrite" data-period="2000" data-type='[ "BLOCKCHAIN", "FRONT-END", "FULL-STACK" ]'>
-      </span> DEVELOPER
-      <!-- <br> ENTHUSIAST, INNOVATOR -->
-    </span>
+  <div id="main" class="nofade">
+    <div id='title'>
+      <span>
+        Hello, I'm Abdullah Shah
+      </span>
+    </div>
+    <div id='subtitle'>
+      <br>
+      <span>
+        I'M A
+        <span href="" class="typewrite" data-period="2000" data-type='[ "BLOCKCHAIN", "FRONT-END", "FULL-STACK" ]'>
+        </span> DEVELOPER
+        <!-- <br> ENTHUSIAST, INNOVATOR -->
+      </span>
+    </div>
   </div>
   <div id="navmenu">
-    <span><a href="/">About</a></span>
+    <span id="about">About</span>
     <span class="navitem"><a href="/">Portfolio</a></span>
     <span><a href="/">Contact</a></span>
   </div>
+
+  <!-- <div id="aboutSection">
+    <p id="aboutText">I am a solution-oriented Developer who is always eager to learn new technologies and concepts. I
+      enjoy software development as it allows me to participate in and help advance revolutionary technology. The
+      opportunities that software, particularly web3 and blockchain, provide to both me as an individual, and the rest
+      of the world, inspire and motivate me to help create more real-world applications.</p>
+  </div> -->
+
+  <div id="aboutSection" class="fade">
+    <p>I am a solution-oriented Developer who is always eager to learn new technologies and concepts. I
+      enjoy software development as it allows me to participate in and help advance revolutionary technology. The
+      opportunities that software, particularly web3 and blockchain, provide to both me as an individual, and the rest
+      of the world, inspire and motivate me to help create more real-world applications.</p>
+  </div>
+
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src="./script.js"></script>
+  <script>
+
+    var aboutSection = document.getElementById('aboutSection');
+    var main = document.getElementById('main');
+    var toggled = true;
+
+    document.getElementById('about').onclick = function () {
+      if (toggled = false) {
+        aboutSection.classList.toggle('nofade');
+        aboutSection.classList.toggle('fade');
+        main.classList.toggle('fade');
+        main.classList.toggle('nofade');
+        toggled = true;
+      }
+      else if (toggled = true) {
+        aboutSection.classList.toggle('fade');
+        aboutSection.classList.toggle('nofade');
+        main.classList.toggle('nofade');
+        main.classList.toggle('fade');
+        toggled = false;
+      }
+    };
+
+  </script>
 </body>
 
 </html>
