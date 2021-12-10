@@ -2,9 +2,136 @@
 
 html {
   height: 100%;
+  scroll-behavior: smooth;
   background: radial-gradient(ellipse at 50%, #1b2735 0%, #090a0f 100%);
   background-position: fixed;
   overflow: hidden;
+}
+
+body {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+div {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+#title {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  margin-top: -60px;
+  padding-left: 10px;
+}
+
+@keyframes fadeInAnimationSub {
+  0% {
+      opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+#subtitle {
+  animation: fadeInAnimationSub ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  position: fixed;
+  top: 55%;
+  left: 0;
+  right: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  margin-top: -60px;
+  padding-left: 10px;
+}
+
+#title span {
+  background: -webkit-linear-gradient(white, #808b98);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#subtitle span {
+  background: -webkit-linear-gradient(white, #808b98);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes fadeInAnimationNav {
+  0% {
+      opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+#navmenu {
+  animation: fadeInAnimationNav ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  position: fixed;
+  top: 65%;
+  left: 0;
+  right: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-family: 300;
+  font-size: 25px;
+}
+
+.navitem {
+  border-left: 1px solid #FFF;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #FFF;
+  border-image: linear-gradient(to bottom, white, #808b98);
+  border-image-slice: 1;
+}
+
+#navmenu span {
+  background: -webkit-linear-gradient(white, #808b98);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
 }
 
 #stars {
@@ -56,80 +183,4 @@ html {
   height: 3px;
   background: transparent;
   box-shadow: 57px 831px #FFF , 619px 210px #FFF , 250px 242px #FFF , 1221px 1632px #FFF , 802px 331px #FFF , 311px 495px #FFF , 1631px 1832px #FFF , 1549px 86px #FFF , 1303px 929px #FFF , 228px 1714px #FFF , 584px 1309px #FFF , 1094px 1977px #FFF , 1385px 23px #FFF , 261px 1632px #FFF , 551px 164px #FFF , 1069px 1632px #FFF , 1242px 1238px #FFF , 892px 1038px #FFF , 767px 1570px #FFF , 199px 1442px #FFF , 1411px 1688px #FFF , 1144px 1989px #FFF , 817px 506px #FFF , 1614px 1032px #FFF , 919px 718px #FFF , 723px 266px #FFF , 1045px 1132px #FFF , 1782px 1570px #FFF , 1668px 306px #FFF , 1492px 1919px #FFF , 726px 1018px #FFF , 221px 202px #FFF , 1187px 1735px #FFF , 1053px 526px #FFF , 201px 1866px #FFF , 612px 1829px #FFF , 1594px 50px #FFF , 1178px 1206px #FFF , 507px 488px #FFF , 1148px 1303px #FFF , 732px 1534px #FFF , 1917px 69px #FFF , 1806px 1681px #FFF , 431px 931px #FFF , 1574px 854px #FFF , 433px 1187px #FFF , 528px 935px #FFF , 1425px 598px #FFF , 1684px 141px #FFF , 1697px 123px #FFF , 1576px 232px #FFF , 556px 997px #FFF , 1784px 1477px #FFF , 422px 800px #FFF , 203px 1908px #FFF , 1902px 1992px #FFF , 1792px 1109px #FFF , 337px 1480px #FFF , 106px 281px #FFF , 351px 351px #FFF , 468px 1940px #FFF , 1655px 1645px #FFF , 994px 1054px #FFF , 439px 377px #FFF , 1642px 213px #FFF , 1320px 1685px #FFF , 681px 1432px #FFF , 1539px 255px #FFF , 1253px 1344px #FFF , 1080px 1970px #FFF , 1109px 1369px #FFF , 383px 873px #FFF , 113px 373px #FFF , 343px 1154px #FFF , 1474px 671px #FFF , 245px 1730px #FFF , 1659px 842px #FFF , 810px 1750px #FFF , 518px 1904px #FFF , 1447px 912px #FFF , 1624px 74px #FFF , 1427px 74px #FFF , 851px 141px #FFF , 1223px 419px #FFF , 504px 1820px #FFF , 532px 1601px #FFF , 1963px 1522px #FFF , 1743px 681px #FFF , 254px 491px #FFF , 196px 1284px #FFF , 689px 1649px #FFF , 676px 1747px #FFF , 744px 923px #FFF , 1012px 1093px #FFF , 1328px 489px #FFF , 1320px 1590px #FFF , 1282px 296px #FFF , 1448px 902px #FFF , 605px 650px #FFF , 1523px 322px #FFF;
-}
-
-#title {
-  position: fixed;
-  top: 50%;
-  left: 0;
-  right: 0;
-  color: #FFF;
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-size: 50px;
-  margin-top: -60px;
-  padding-left: 10px;
-}
-
-#subtitle {
-  position: fixed;
-  top: 55%;
-  left: 0;
-  right: 0;
-  color: #FFF;
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-size: 30px;
-  margin-top: -60px;
-  padding-left: 10px;
-}
-
-#title span {
-  background: -webkit-linear-gradient(white, #808b98);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-#subtitle span {
-  background: -webkit-linear-gradient(white, #808b98);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-#navmenu {
-  position: fixed;
-  top: 65%;
-  left: 0;
-  right: 0;
-  color: #FFF;
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  font-family: 300;
-  font-size: 25px;
-}
-
-.navitem {
-  border-left: 1px solid #FFF;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-right: 1px solid #FFF;
-  border-image: linear-gradient(to bottom, white, #808b98);
-  border-image-slice: 1;
-}
-
-#navmenu span {
-  background: -webkit-linear-gradient(white, #808b98);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-@keyframes animStar {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-2000px);
-  }
 }
