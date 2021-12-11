@@ -172,6 +172,37 @@ div {
 
 /* ABOUT SECTION END */
 
+/* CONTACT SECTION */
+
+#contactSection{
+  position: fixed;
+  right: 5%;
+  top: 30%;
+  width: 40%;
+  text-align: left;
+  overflow: unset;
+  white-space: normal;
+  word-wrap: break-word;
+  font-size: large;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 150;
+  font-size: 30px;
+  height: 100vh;
+  color: white;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+#contactSection.fade{
+  opacity: 0;
+}
+
+#contactSection.nofade{
+  opacity: 1;
+}
+
+/* CONTACT SECTION END */
+
 @keyframes animStar {
   from {
     transform: translateY(0px);
