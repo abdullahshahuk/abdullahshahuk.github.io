@@ -252,6 +252,18 @@ a:active
 
 /* PORTFOLIO SECTION END */
 
+#nextButton1{
+  position: absolute;
+  top: 190%;
+  left: 50%;
+  right: 50%;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-family: 300;
+  font-size: 25px;
+}
+
 /* PORTFOLIO SECTION 2 */
 
 #portfolioSection2{
