@@ -109,6 +109,34 @@ div {
   }
 }
 
+/* LINKS */
+a:link
+{
+    color: lightgray;
+    text-decoration: none;
+}
+
+a:visited
+{
+    color: lightgray;
+    font-style: italic;
+}
+
+a:hover
+{
+    color: white;
+    font-weight: bolder;
+}
+
+a:active
+{
+    color: #FFF;
+    font-variant: small-caps;
+}
+/* LINKS END */
+
+/* BUTTONS */
+
 #navmenu {
   animation: fadeInAnimationNav ease 4s;
   animation-iteration-count: 1;
@@ -133,11 +161,23 @@ div {
   border-image-slice: 1;
 }
 
+#contact:hover{
+    color: white;
+    font-weight: bolder;
+}
+
+#about:hover{
+  color: white;
+  font-weight: bolder;
+}
+
 #navmenu span {
   background: -webkit-linear-gradient(white, #808b98);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* BUTTONS END */
 
 /* ABOUT SECTION */
 
