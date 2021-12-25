@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)https://www.w3schools.com/w3css/tryw3css_templates_coming_soon.htm -->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>;)</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./w3.css">
+  <link rel="stylesheet" href="./css">
+  <style>
+    body,
+    h1 {
+      font-family: "Raleway", sans-serif
+    }
+
+    body,
+    html {
+      height: 100%
+    }
+
+    .bgimg {
+      background-image: url('./bg.jpg');
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+    <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    </div>
+    <div class="w3-display-middle">
+      <h1 class="w3-jumbo w3-animate-top">
+        <div style="text-align: center;" class="countup" id="countup1">
+          <span class="days">00</span>
+          <span class="timeRefDays">Days, </span>
+          <span class="hours">00</span>
+          <span class="timeRefHours">Hours, </span><br>
+          <span class="minutes">00</span>
+          <span class="timeRefMinutes">Minutes,</span>
+          <span class="seconds">00</span>
+          <span class="timeRefSeconds">seconds</span>
+        </div>
+      </h1>
+    </div>
+  </div>
+  <script>
+    window.onload = function () {
+      countUpFromTime("Dec 24, 2021 20:57:00", 'countup1');
+    };
+    function countUpFromTime(countFrom, id) {
+      countFrom = new Date(countFrom).getTime();
+      var now = new Date(),
+        countFrom = new Date(countFrom),
+        timeDifference = (now - countFrom);
+
+      var secondsInADay = 60 * 60 * 1000 * 24,
+        secondsInAHour = 60 * 60 * 1000;
+
+      days = Math.floor(timeDifference / (secondsInADay) * 1);
+      hours = Math.floor((timeDifference % (secondsInADay)) / (secondsInAHour) * 1);
+      mins = Math.floor(((timeDifference % (secondsInADay)) % (secondsInAHour)) / (60 * 1000) * 1);
+      secs = Math.floor((((timeDifference % (secondsInADay)) % (secondsInAHour)) % (60 * 1000)) / 1000 * 1);
+
+      var idEl = document.getElementById(id);
+      idEl.getElementsByClassName('days')[0].innerHTML = days;
+      idEl.getElementsByClassName('hours')[0].innerHTML = hours;
+      idEl.getElementsByClassName('minutes')[0].innerHTML = mins;
+      idEl.getElementsByClassName('seconds')[0].innerHTML = secs;
+
+      clearTimeout(countUpFromTime.interval);
+      countUpFromTime.interval = setTimeout(function () { countUpFromTime(countFrom, id); }, 1000);
+    }
+  </script>
+</body>
+
+</html>
