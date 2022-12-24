@@ -70,7 +70,7 @@
       secs = Math.floor((((timeDifference % (secondsInADay)) % (secondsInAHour)) % (60 * 1000)) / 1000 * 1);
       isAnniversaryText = "";
       
-      var remainder = (days % 364) / 100;
+      var remainder = (days % 365) / 100;
       
       if (remainder === 0)
       {
