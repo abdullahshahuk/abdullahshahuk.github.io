@@ -2,6 +2,15 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+:root {
+  --clr-dark: rgb(0, 0, 0);
+  --clr-accent-darker: rgb(53, 53, 53);
+  --clr-accent-dark: rgb(85, 85, 85);
+  --clr-accent-light: rgb(163, 163, 163);
+  --clr-accent-lighter: rgb(181, 181, 181);
+  --clr-light: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +25,7 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: var(--clr-accent-dark);
 }
 
 /* TRANSITION */
@@ -46,16 +55,15 @@ nav {
 }
 
 a {
-  color: black;
+  color: var(--clr-dark);
   text-decoration: none;
-  text-decoration-color: white;
+  text-decoration-color: var(--clr-light);
 }
 
 a:hover {
   color: grey;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
 }
 
 .logo {
@@ -63,7 +71,7 @@ a:hover {
 }
 
 .logo:hover {
-  cursor: default;
+  cursor: default; /* Makes the logo unselectable (like an image). */
 }
 
 /* HAMBURGER MENU */
@@ -89,7 +97,7 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: var(--clr-dark);
   transition: all 0.3 ease-in-out;
 }
 
@@ -97,7 +105,7 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
+  background-color: var(--clr-light);
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -109,7 +117,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: black;
+  color: var(--clr-dark);
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -231,7 +239,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: var(--clr-accent-darker) 0.1rem solid;
 }
 
 .btn-color-1:hover,
@@ -241,12 +249,12 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: white;
+  background: var(--clr-accent-darker);
+  color: var(--clr-light);
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: var(--clr-dark);
 }
 
 .btn-color-2 {
@@ -254,7 +262,7 @@ section {
 }
 
 .btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
+  border: var(--clr-light) 0.1rem solid;
 }
 
 .btn-container {
@@ -296,10 +304,10 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
+  background: var(--clr-light);
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: var(--clr-accent-darker) 0.1rem solid;
+  border-color: var(--clr-accent-dark);
   text-align: center;
 }
 
@@ -321,7 +329,7 @@ section {
 }
 
 .experience-sub-title {
-  color: rgb(85, 85, 85);
+  color: var(--clr-accent-dark);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
@@ -360,8 +368,8 @@ article .icon {
 }
 
 .color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  border-color: var(--clr-accent-light);
+  background: var(--clr-light);
 }
 
 .project-img {
@@ -372,12 +380,12 @@ article .icon {
 
 .project-title {
   margin: 1rem;
-  color: black;
+  color: var(--clr-dark);
 }
 
 .project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
+  color: var(--clr-dark);
+  border-color: var(--clr-accent-light);
 }
 
 /* CONTACT */
@@ -393,8 +401,8 @@ article .icon {
   display: flex;
   justify-content: center;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: var(--clr-accent-darker) 0.1rem solid;
+  border-color: var(--clr-accent-light);
   background: (250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
